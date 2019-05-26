@@ -50,4 +50,5 @@ class SignUpView(generic.FormView):
 class LogOutView(generic.View):
     def get(self, request):
         logout(request)
+        print("User Logged out")
         return HttpResponseRedirect("/")
